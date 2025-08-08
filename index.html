@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abhijeet Gite | Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .typewriter {
+      overflow: hidden;
+      border-right: 4px solid #fff;
+      white-space: nowrap;
+      animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-white shadow-md z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+      <ul class="flex gap-6 text-lg">
+        <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+        <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header id="home" class="text-center py-28 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+    <h1 class="text-4xl font-bold mb-4">Hi, I'm <span class="text-yellow-300">Abhijeet Gite</span></h1>
+    <p class="text-xl mb-6 typewriter">|| MERN & Java Full Stack Developer ||</p>
+    <a href="Resume.pdf" download class="bg-white text-blue-600 px-6 py-3 rounded font-semibold hover:bg-gray-200 transition">
+      Download Resume
+    </a>
+  </header>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-6xl mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-up">My Projects</h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Project 1 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 hover:scale-105 transition" data-aos="fade-up">
+        <h3 class="text-xl font-bold mb-2">Blogging Platform</h3>
+        <p class="mb-4">A full-stack blogging platform with user authentication, CRUD operations, and AdSense integration.</p>
+        <ul class="list-disc list-inside text-sm mb-4">
+          <li>Frontend: React.js, Tailwind CSS, Vite</li>
+          <li>Backend: Node.js, Express.js</li>
+          <li>Database: MongoDB (Mongoose)</li>
+          <li>Authentication: JWT (JSON Web Token)</li>
+          <li>Deployment: Render / Vercel</li>
+        </ul>
+        <a href="https://blogging-platform-frontend-yrv0.onrender.com/" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">View Project</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 hover:scale-105 transition" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-xl font-bold mb-2">Organ Donation Platform</h3>
+        <p class="mb-4">A centralized platform that bridges the gap between donors, patients, and hospitals, ensuring transparency and life-saving decisions.</p>
+        <ul class="list-disc list-inside text-sm mb-4">
+          <li><strong>Backend:</strong> Java 17, Spring Boot, Spring Data JPA, Hibernate, MySQL, JavaMailSender, REST APIs</li>
+          <li><strong>Frontend:</strong> React.js, Tailwind CSS, Axios, React Router</li>
+          <li><strong>Deployment:</strong> GitHub (Code Repo)</li>
+        </ul>
+        <a href="https://github.com/abhijeet-gite/organ-donation-platform" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">View Project</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 hover:scale-105 transition" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-xl font-bold mb-2">Employee Payroll Management</h3>
+        <p class="mb-4">A desktop-based application to manage employee data, salaries, bonuses, and generate monthly salary reports in PDF format.</p>
+        <ul class="list-disc list-inside text-sm mb-4">
+          <li>Technology: Java (Swing/JavaFX), MySQL, JDBC</li>
+          <li>Functionality: CRUD Operations, Salary Calculation, PDF Generation</li>
+        </ul>
+        <a href="https://github.com/abhijeet-gite/EmployeePayrollProject" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">View Project</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="text-center py-16 bg-gray-200">
+    <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Connect With Me</h2>
+    <div class="flex justify-center gap-6 flex-wrap" data-aos="fade-up" data-aos-delay="100">
+      <a href="https://github.com/abhijeet-gite" target="_blank" class="bg-black text-white px-4 py-2 rounded hover:bg-gray-700">GitHub</a>
+      <a href="https://linkedin.com/in/abhijeetgite" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">LinkedIn</a>
+      <a href="mailto:abhijeetgite2003@gmail.com" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Gmail</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-gray-900 text-white">
+    &copy; 2025 Abhijeet Gite
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+  
+</body>
+</html>
+
+
+
+
